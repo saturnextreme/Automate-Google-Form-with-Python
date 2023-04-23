@@ -19,7 +19,7 @@ l9 = ['//*[@id="mG61Hd"]/div[2]/div/div[2]/div[10]/div/div/div[2]/div/div/span/d
 
 for _ in range(10):
     web = webdriver.Chrome()
-    web.get('https://docs.google.com/forms/d/e/1FAIpQLSddZWj2U2JZDs23ADg7-RrIknyVRxXH-gj2x7Oraske1YXR4Q/viewform') # web.get(URL of the form)
+    # web.get(URL of the form)
     time.sleep(4) # To avoid error while filling due to the time delay caused by internet
     year = str(random.randrange(1960,2007))
     size = random.choice([1,2,3])
