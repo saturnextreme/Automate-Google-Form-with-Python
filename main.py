@@ -16,7 +16,7 @@ l9 = ['//*[@id="mG61Hd"]/div[2]/div/div[2]/div[10]/div/div/div[2]/div/div/span/d
 
 for i in range(1):
     web = webdriver.Chrome()
-    web.get('https://docs.google.com/forms/d/e/1FAIpQLSddZWj2U2JZDs23ADg7-RrIknyVRxXH-gj2x7Oraske1YXR4Q/viewform')
+#     web.get(URL of the form)
     time.sleep(2)
     year = str(random.randrange(1960,2007))
     name = indian_names.get_full_name()
