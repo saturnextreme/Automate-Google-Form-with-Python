@@ -48,10 +48,10 @@ for _ in range(10):
     fs5.click()
     
     # For multiple choice question containing 4 options
-    l = [False for j in range(4)]
-    for j in range(random.randrange(1, 5)):
-        y = random.randrange(1,5)
-        if l[y-1] == False:
+    l = [False for j in range(4)] # This list is maintained to check if a particular option was already clicked or not
+    for j in range(random.randrange(1, 5)): # This is for the number/size of options to be selected 
+        y = random.randrange(1,5) # Particular option which is to be selected
+        if l[y-1] == False: 
             fs6 = web.find_element('xpath', l6[y-1])
             fs6.click()
             l[y-1] = True
